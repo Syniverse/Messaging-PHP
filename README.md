@@ -11,6 +11,8 @@ The PHP SDK hides some of the REST API's constraints, like
 lists being returned in logical pages of _n_ records. With the
 PHP SDK, the list method returns a generator that works with *foreach()*.
 
+Please register for a free account at https://developer.syniverse.com to get your API keys.
+
 ## External dependencies
 Dependencies can be installed with [composer](https://getcomposer.org/).
 
