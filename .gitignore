@@ -1,0 +1,8 @@
+.kdev*/
+.vscode/
+*.kdev4
+vendor/
+*.orig/
+*.org
+.old/
+.jenkins/

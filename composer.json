@@ -1,0 +1,23 @@
+{
+    "name": "synivere/scgapi",
+    "type": "library",
+    "description": "Messaging-PHP",
+    "homepage": "https://github.com/Syniverse/Messaging-Python",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ScgApi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ScgApi\\Test\\Functional\\": "tests/functional/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "6.3.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.2"
+    }
+}
