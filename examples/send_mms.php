@@ -21,7 +21,7 @@ function send_mms(string $senderid, string $mdn, string $content,
     $mrq_res = new ScgApi\MessageRequestResource($session);
 
     $request_id = $mrq_res->create(
-        ['from' => "sender_id:${senderid}",
+        ['from' => "${senderid}",
         'to' =>[$mdn],
         'attachments' => [$att_id],
         'body' => $content])['id'];
