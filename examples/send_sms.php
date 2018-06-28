@@ -8,7 +8,7 @@ function send_sms(string $senderid, string $mdn, string $content, array $options
     $session = new ScgApi\Session($options);
     $res = new ScgApi\MessageRequestResource($session);
     $request_id = $res->create(
-        ['from' => "sender_id:${senderid}", 
+        ['from' => "${senderid}", 
         'to' =>[$mdn], 
         'body' => $content
         ])['id'];
