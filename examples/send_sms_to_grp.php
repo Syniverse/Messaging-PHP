@@ -29,7 +29,7 @@ function send_sms(string $senderid, string $mdn1, string $mdn2, string $content,
     // Send an sms to our new friends
     $mrqRes = new ScgApi\MessageRequestResource($session);
     $requestId = $mrqRes->create([
-        'from' => "sender_id:${senderid}",
+        'from' => "${senderid}",
         'to' => ["group:${friendsId}"],
         'body' => $content])['id'];
 
