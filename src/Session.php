@@ -22,7 +22,7 @@ class Session{
             'consumer_secret' => 'not-specified-consumer-secret',
             'base_uri' =>'https://api.syniverse.com/',
             'user_token' =>'user_token',
-            'bearer_token' =>'bearer_token',
+            'bearer_token' =>'token',
             'timeout'=>30],$conf);
 
         if (!empty($conf['auth'])) {
@@ -30,7 +30,7 @@ class Session{
         }
 
         $this->user_token = $this->config['user_token'];
-        $this->bearer_token = $this->config['bearer_token'];
+        $this->bearer_token = $this->config['token'];
         $this->consumer_key = $this->config['consumer_key'];
         $this->consumer_secret = $this->config['consumer_secret'];
         $this->client = new Client($this->config);
