@@ -305,3 +305,29 @@ Array
 
 [Full example](examples/check_message_request_state.php)
 
+
+## Activating Whatsapp
+
+We have provided a [PHP example](examples/whatsapp.php) app that shows how to create and activate a sender-id for Whatsapp.
+
+Example on use:
+```sh
+# Create the sender-id
+php examples/whatsapp.php create --phone-number=<Phone number registered with Whatsapp> --token=<Token from Whatsapp> --auth=auth.json
+
+# Syniverse will now provision your sender-id
+
+# Initialize the process to get a verification code from Whatsapp
+$ php examples/whatsapp.php init --sender-id=<The id you just created> --register-method=sms --auth=auth.json
+
+# Activate the sender-id
+$ php examples/whatsapp.php activate --sender-id=<The id you just created> --verification-code=<Code from Whatsapp> --auth auth.json
+
+# Deactive the sender-id
+$ php examples/whatsapp.php deactivate --sender-id=<The id you just created> --auth auth.json
+
+# Reactivate the sender-id
+$ php examples/whatsapp.php reactivate --sender-id=<The id you just created> --auth auth.json
+
+```
+
