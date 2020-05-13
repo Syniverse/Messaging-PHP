@@ -106,7 +106,7 @@ for reference.
 
 # Some more examples
 
-## Sending a SMS to a GSM number
+## Sending a SMS to a Mobile number
 
 ```php
 function send_sms(string $senderid, string $mdn, string $content, array $options)
@@ -137,7 +137,7 @@ This works as above, except for the *to* field in *create*.
 
 ```
 
-## Sending a Message to a Group
+## Sending a Message to a Contact Group
 
 Here we will create two new contacts, a new group, assign the contacts
 to the group, and then send a message to the group.
